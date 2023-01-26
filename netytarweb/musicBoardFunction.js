@@ -129,9 +129,16 @@ function drawboard(){
 }
 
 function setNoteName(pitch){
+    let temporaryNames = "";
     for (let i = 0; i < midiNotesScale.length; i++) {
         if ((midiNotesScale[i][1] == pitch)&&(scaleNameSet.checked == true)) {
-            return midiNotesScale[i][0];
+            if(midiNotesScale[i][0][0]=="s"){
+                temporaryNames=midiNotesScale[i][0][1]+"#"+midiNotesScale[i][0][2];
+                return temporaryNames;
+            }else{
+                return midiNotesScale[i][0];
+            }
+
         }
     }
     return "";
