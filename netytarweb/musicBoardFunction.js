@@ -100,7 +100,7 @@ function drawboard(){
     let line = "";
     let distancey = distancex/2;
     for (let i = 0; i < 14; i++) {
-        svg += "<svg width="+14*distancex+" height="+14*distancey+">";
+        svg += "<svg width="+15*distancex+" height="+15*distancey+">";
         for (let j = 0; j < 14; j++) {
             line = i;
             let x = 50+j*distancex;
