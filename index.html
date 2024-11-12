@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>NetytarWeb</title>
+    <style src="main.css"></style>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body onload="startMIDI()" style="background-color:black">
+<div id="myNav" class="overlay">
+    <div class="overlay-content">
+        <div class="column">
+            <div class="card">
+                <p class="card_title">MIDI setting</p>
+                <p style="color:white">Output MIDI:
+                    <select name="chooseOutput" id="chooseOutput" onchange="changeOutput(value)">
+                        <option>Nessuno</option>
+                    </select>
+                </p>
+                <p style="color:white">MIDI note: <span id="pitch">-</span></p>
+                <p style="color:white" id="console"></p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <p class="card_title">Interface setting</p>
+                <input onchange="reloadBoard()" id="circleDistance" type="range" min="150" step="50" max="400" value="200">
+                <label for="circleDistance" style="color:white">Set note distance</label>
+                <br>
+                <select class="menuatendina" id="noteInput" onchange="reloadBoard()">
+                    <option value='C' selected>C</option>
+                    <option value='D'>D</option>
+                    <option value='E'>E</option>
+                    <option value='F'>F</option>
+                    <option value='G'>G</option>
+                    <option value='A'>A</option>
+                    <option value='B'>B</option>
+                </select>
+                <label for="noteInput" style="color:white">Set root note</label>
+                <br>
+                <select class="menuatendina" id="scaleInput" onchange="reloadBoard()">
+                    <option value='maj' selected>Maj</option>
+                    <option value='min'>Min</option>
+                </select>
+                <label for="scaleInput" style="color:white">Set scale</label>
+                <br>
+                <input id="noteName" type="checkbox" onclick="reloadBoard()">
+                <label for="noteName" style="color:white">Note name</label>
+                <br>
+                <input id="autoscroll" type="checkbox">
+                <label for="autoscroll" style="color:white">Autoscroll</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sidenav">
+    <span  id="openNav" class="openbtn" onclick="openNav()">&#9776; </span>
+    <span  id="closeNav" class="closebtn" onclick="closeNav()">&times;</span>
+    <svg width="200" height="200" >
+        <p class="title">NetytarWeb</p>
+    </svg>
+</div>
+<div onmousemove="getMousePos(event)" id="musicBoard" class="musicBoard_style"></div>
+<p id="console" ></p>
+<script src="main.js"></script>
+<script src="midiFunction.js"></script>
+<script src="musicBoardFunction.js"></script>
+<script src="autoscroll.js"></script>
+</body>
+</html>
