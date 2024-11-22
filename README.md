@@ -19,4 +19,12 @@
 <p>
   L’interfaccia presenta un menù a scomparsa, come si vede nella Fig. 1, che contiene due tipi di comandi, quelli relativi alla gestione delle porte MIDI disponibili e quelli relativi alla griglia di tasti. Questa scelta è stata eseguita per lasciare la maggior quantità di spazio all’estensione della griglia di tasti.
 </p>
-
+<p>
+  Per quanto riguarda le impostazioni relative alla griglia `e possibile modificare la distanza tra i tasti, impostare la nota di riferimento e la scala, scelta tra maggiore e minore, aggiungere il nome della nota al di sotto del tasto corrispondente e attivare la modalita` di autoscrolling. Quest’ultima permette all’utente di navigare la tastie- ra in maniera fluida attraverso il gaze pointing, consentendo di raggiungere note non rappresentate a schermo in un dato istante.
+</p>
+<p>
+  La griglia di tasti `e stata progettata con un layout isomorfico: a ogni nota corrispon- dono otto elementi adiacenti, la cui posizione rispetto alla nota di riferimento, definisce l’incremento o il decremento in semitoni, come mostrato dalla Fig. 2. Grazie a questo tipo di layout una trasposizione di scala, accordo o brano musicale non causa nessun cambiamento di forma nel percorso da effettuare.
+</p>
+<p>
+  Per suonare NetytarWeb attraverso il movimento degli occhi è necessario dotarsi di un eye tracker. Durante lo sviluppo del progetto è stato utilizzato Tobii Eye Tracker 5. Con esso viene fornito un software per la calibrazione del dispositivo. Grazie a un’applicazione middleware esso si sostituisce al cursore del mouse, opzione attivabile dalla pressione del tasto “L”.
+</p>
