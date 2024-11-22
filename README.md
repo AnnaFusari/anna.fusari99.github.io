@@ -1,7 +1,7 @@
 # NetytarWeb
 <p align="center">
-    At this link you can try the app:
-  <a href="https://annafusari.github.io/netytarweb/">click and try</a>
+    Prova l'interfaccia:
+  <a href="https://annafusari.github.io/netytarweb/">NetytarWeb</a>
 </p>
 
 <p>
