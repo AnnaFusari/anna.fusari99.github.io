@@ -37,10 +37,11 @@
 ## Utilizzare NetytarWeb
 <h3>Requisiti hardware</h3>
 <p>Per utilizzare NetytarWeb `e neccessario essere in possesso di:</p>
+<ul>
     <li>un computer connesso alla rete internet e munito di browser compatibile.</li>
     <li>un sensore a fiato realizzato con Arduino, istruzioni per la sua costruzione sono disponibili su: https: //github.com/Neeqstock/NeeqSensors</li>
     <li>un dispositivo Tobii Eye Tracker (ad oggi compatibile solo con il sistema operativo Windows)</li>
-
+</ul>
 
 <h3>Requisiti software</h3>
 <ul>Per utilizzare NetytarWeb `e necessario installare i seguenti software sul proprio computer:
