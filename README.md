@@ -44,16 +44,18 @@
 </ul>
 
 <h3>Requisiti software</h3>
-<ul>Per utilizzare NetytarWeb `e necessario installare i seguenti software sul proprio computer:
+<p>Per utilizzare NetytarWeb `e necessario installare i seguenti software sul proprio computer:</p>
+<ul>
     <li>E` particolarmente consigliato Google Chrome.</li>
     <li>Tobii Drivers (https://gaming.tobii.com/getstarted/)</li>
     <li>applicazione middleware per l’utilizzo del sensore a fiato, disponibile su:
      https://github.com/Neeqstock/NetytarWebController</li>
-    <li><ul>sintetizzatore software o una DAW che mette a disposizione una libreria di suoni
+    <li>sintetizzatore software o una DAW che mette a disposizione una libreria di suoni:
+        <ul>
         <li>sistema operativo Apple: `e possibile utilizzare Garageband (https: //www.apple.com/it/mac/garageband/) e impostare le porte MIDI tramite driver IAC (Impostazioni/Configurazioni MIDI audio/finestra/- Mostra studio MIDI)
-            <li>sistema operativo Windows: `e possibilie utilizzare LoopMidi (https:// www.tobias-erichsen.de/software/loopmidi.html) per creare una connessione MIDI virtuale sulla macchina. Tramite VSTHost (https: //www.hermannseib.com/english/vsthost.htm) `e possibile caricare plugin VST, molti dei quali sono reperibili gratuitamente sul sito Plu- gins4Free (https://plugins4free.com/).</li>
+            <li>sistema operativo Windows: `e possibilie utilizzare LoopMidi (https:// www.tobias-erichsen.de/software/loopmidi.html) per creare una connessione MIDI virtuale sulla macchina. Tramite VSTHost (https: //www.hermannseib.com/english/vsthost.htm) `e possibile caricare plugin VST, molti dei quali sono reperibili gratuitamente sul sito Plu- gins4Free (https://plugins4free.com/).</li></ul>
 </li>
-    </ul></li>
+
 </ul>
 
 
