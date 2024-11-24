@@ -36,15 +36,15 @@
 
 ## Utilizzare NetytarWeb
 <h3>Requisiti hardware</h3>
-<p>Per utilizzare NetytarWeb `e neccessario essere in possesso di:</p>
+<p>Per utilizzare NetytarWeb è neccessario essere in possesso di:</p>
 <ul>
     <li>un computer connesso alla rete internet e munito di browser compatibile.</li>
-    <li>un sensore a fiato realizzato con Arduino, istruzioni per la sua costruzione sono disponibili su: https: //github.com/Neeqstock/NeeqSensors</li>
+    <li>un sensore a fiato realizzato con Arduino, istruzioni per la sua costruzione sono disponibili su: https://github.com/Neeqstock/NeeqSensors</li>
     <li>un dispositivo Tobii Eye Tracker (ad oggi compatibile solo con il sistema operativo Windows)</li>
 </ul>
 
 <h3>Requisiti software</h3>
-<p>Per utilizzare NetytarWeb `e necessario installare i seguenti software sul proprio computer:</p>
+<p>Per utilizzare NetytarWeb è necessario installare i seguenti software sul proprio computer:</p>
 <ul>
     <li>E` particolarmente consigliato Google Chrome.</li>
     <li>Tobii Drivers (https://gaming.tobii.com/getstarted/)</li>
@@ -52,8 +52,8 @@
      https://github.com/Neeqstock/NetytarWebController</li>
     <li>sintetizzatore software o una DAW che mette a disposizione una libreria di suoni:
         <ul>
-        <li>sistema operativo Apple: `e possibile utilizzare Garageband (https: //www.apple.com/it/mac/garageband/) e impostare le porte MIDI tramite driver IAC (Impostazioni/Configurazioni MIDI audio/finestra/- Mostra studio MIDI)
-            <li>sistema operativo Windows: `e possibilie utilizzare LoopMidi (https:// www.tobias-erichsen.de/software/loopmidi.html) per creare una connessione MIDI virtuale sulla macchina. Tramite VSTHost (https: //www.hermannseib.com/english/vsthost.htm) `e possibile caricare plugin VST, molti dei quali sono reperibili gratuitamente sul sito Plu- gins4Free (https://plugins4free.com/).</li></ul>
+        <li>sistema operativo Apple: è possibile utilizzare Garageband (https: //www.apple.com/it/mac/garageband/) e impostare le porte MIDI tramite driver IAC (Impostazioni/Configurazioni MIDI audio/finestra/- Mostra studio MIDI)
+            <li>sistema operativo Windows: è possibilie utilizzare LoopMidi (https:// www.tobias-erichsen.de/software/loopmidi.html) per creare una connessione MIDI virtuale sulla macchina. Tramite VSTHost (https: //www.hermannseib.com/english/vsthost.htm) `e possibile caricare plugin VST, molti dei quali sono reperibili gratuitamente sul sito Plu- gins4Free (https://plugins4free.com/).</li></ul>
 </li>
 
 </ul>
