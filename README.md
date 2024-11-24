@@ -53,7 +53,7 @@
     <li>sintetizzatore software o una DAW che mette a disposizione una libreria di suoni:
         <ul>
         <li>sistema operativo Apple: è possibile utilizzare Garageband (https: //www.apple.com/it/mac/garageband/) e impostare le porte MIDI tramite driver IAC (Impostazioni/Configurazioni MIDI audio/finestra/- Mostra studio MIDI)
-            <li>sistema operativo Windows: è possibilie utilizzare LoopMidi (https:// www.tobias-erichsen.de/software/loopmidi.html) per creare una connessione MIDI virtuale sulla macchina. Tramite VSTHost (https: //www.hermannseib.com/english/vsthost.htm) `e possibile caricare plugin VST, molti dei quali sono reperibili gratuitamente sul sito Plu- gins4Free (https://plugins4free.com/).</li></ul>
+            <li>sistema operativo Windows: è possibilie utilizzare LoopMidi (https:// www.tobias-erichsen.de/software/loopmidi.html) per creare una connessione MIDI virtuale sulla macchina. Tramite VSTHost (https: //www.hermannseib.com/english/vsthost.htm) è possibile caricare plugin VST, molti dei quali sono reperibili gratuitamente sul sito Plu- gins4Free (https://plugins4free.com/).</li></ul>
 </li>
 
 </ul>
