@@ -36,11 +36,11 @@
 
 ## Utilizzare NetytarWeb
 <h3>Requisiti hardware</h3>
-<ul>Per utilizzare NetytarWeb `e neccessario essere in possesso di:
+<p>Per utilizzare NetytarWeb `e neccessario essere in possesso di:</p>
     <li>un computer connesso alla rete internet e munito di browser compatibile.</li>
     <li>un sensore a fiato realizzato con Arduino, istruzioni per la sua costruzione sono disponibili su: https: //github.com/Neeqstock/NeeqSensors</li>
     <li>un dispositivo Tobii Eye Tracker (ad oggi compatibile solo con il sistema operativo Windows)</li>
-</ul>
+
 
 <h3>Requisiti software</h3>
 <ul>Per utilizzare NetytarWeb `e necessario installare i seguenti software sul proprio computer:
@@ -53,8 +53,6 @@
             <li>sistema operativo Windows: `e possibilie utilizzare LoopMidi (https:// www.tobias-erichsen.de/software/loopmidi.html) per creare una connessione MIDI virtuale sulla macchina. Tramite VSTHost (https: //www.hermannseib.com/english/vsthost.htm) `e possibile caricare plugin VST, molti dei quali sono reperibili gratuitamente sul sito Plu- gins4Free (https://plugins4free.com/).</li>
 </li>
     </ul></li>
-        
-
 </ul>
 
 
