@@ -58,4 +58,18 @@
 
 </ul>
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Swapped text!";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+</script>
+<p>Click the button to swap the text of the DIV element:</p>
 
+<p><button onclick="myFunction()">Click Me</button></p>
+
+<div id="myDIV">Hello</div>
