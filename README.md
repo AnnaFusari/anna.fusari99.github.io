@@ -1,75 +1,62 @@
-# NetytarWeb
+# NetytarWeb 
+
 <p align="center">
-    Prova l'interfaccia:
+    Try 
   <a href="https://annafusari.github.io/netytarweb/">NetytarWeb</a>
 </p>
 
+<p>This project aims to implement the web version of Netytar, a digital accessible musical instrument (ADMI) designed for individuals with tetraplegic motor disabilities.</p>
 <p>
-  Questo elaborato ha lo scopo di implementare la versione web di Netytar, uno strumento musicale digitale accessibile (ADMI) da persone con disabilità motoria tetraplegica. 
+   This instrument is based on the concept of gaze pointing: the interface is designed to allow musicians to select keys using eye movement, enabling interaction that overcomes the physical limitations imposed by certain types of disabilities. Specifically, it is targeted at users affected by tetraplegia, a condition involving paralysis of the body from the shoulders downward. 
 </p>
 <p>
-  Questo strumento si basa sul concetto di gaze pointing: l’interfaccia è stata realizzata per consentire al musicista di selezionare i tasti tramite il movimento dello sguardo, in modo tale da utilizzare un canale di interazione che possa superare i limiti fisici imposti da alcuni tipi di disabilità. In particolare, questo strumento è rivolto a tutti gli utenti affetti da tetraplegia, ovvero una paralisi che coinvolge tutto il corpo a partire dalle spalle in giù.
+   The interface consists of a grid of colored circular keys representing musical notes. Each color corresponds to a different note, and lines connect the interface elements to form a major or minor scale based on the reference note. Notably, the application uses the Web MIDI API to communicate with MIDI devices provided by the client. While not yet a standard, this choice was made to give users maximum freedom of expression, allowing them to use sounds directly from synthesizers installed on their devices. To send a NoteOn or NoteOff message, the "P" key must be pressed and released. Legato playing is possible by selecting different notes without releasing the key. 
 </p>
-<p>
- L’interfaccia è formata da una griglia di tasti circolari colorati rappresentanti le note. Ogni colore è associato a una nota diversa, le linee uniscono gli elementi dell’interfaccia andando a formare una scala, maggiore o minore, a partire dalla nota di riferimento. Vale la pena soffermarsi sul fatto che l’applicazione utilizza la Web MIDI API per comunicare con i dispositivi MIDI messi a disposizione dal client. Essa non rappresenta ancora uno standard ma è stata scelta come soluzione perchè garantisce all’utente la massima libertà di espressione, dandogli la possibilità di utilizzare i suoni forniti direttamente dai sintetizzatori installati sulla propria macchina. Per fare in modo che l’applicazione comunichi un messaggio di NoteOn o NoteOff bisogna premere e rilasciare il tasto “P”. E` possibile suonare dei legati selezionando note diverse senza rilasciare il tasto. La performance delle note può essere affidata ad un sensore a fiato sviluppato tramite Arduino, che permette di suonare utilizzando il soffio. Il suo utilizzo è permesso da un’applicazione middleware in grado di gestire gli input del sensore e sostituirli alla pressione del tasto “P”, al tempo stesso inviando segnali MIDI channel pressure in grado di gestire la dinamica del suono.
-</p>
-
 <p align="center">
     <img src="images/interface.png" alt="alt text" width="50%" height="50%">
 </p>
+<p>
+    The interface includes a collapsible menu, as shown in Fig. 1, with two types of commands: those for managing available MIDI ports and those for the key grid. This was designed to maximize space for the key grid.
+</p>
+<p>
+    Regarding grid settings, users can adjust the distance between keys, set the reference note and scale (major or minor), add note names below corresponding keys, and enable autoscrolling. Autoscrolling allows smooth navigation of the keyboard via gaze pointing, reaching notes not currently visible on the screen.
+</p>
 
-<p>
-  L’interfaccia presenta un menù a scomparsa, come si vede nella Fig. 1, che contiene due tipi di comandi, quelli relativi alla gestione delle porte MIDI disponibili e quelli relativi alla griglia di tasti. Questa scelta è stata eseguita per lasciare la maggior quantità di spazio all’estensione della griglia di tasti.
-</p>
-<p>
-  Per quanto riguarda le impostazioni relative alla griglia `e possibile modificare la distanza tra i tasti, impostare la nota di riferimento e la scala, scelta tra maggiore e minore, aggiungere il nome della nota al di sotto del tasto corrispondente e attivare la modalita` di autoscrolling. Quest’ultima permette all’utente di navigare la tastie- ra in maniera fluida attraverso il gaze pointing, consentendo di raggiungere note non rappresentate a schermo in un dato istante.
-</p>
 <p align="center">
     <img src="images/img2.png" alt="alt text" width="50%" height="50%">
 </p>
+
 <p>
-  La griglia di tasti `e stata progettata con un layout isomorfico: a ogni nota corrispon- dono otto elementi adiacenti, la cui posizione rispetto alla nota di riferimento, definisce l’incremento o il decremento in semitoni, come mostrato dalla Fig. 2. Grazie a questo tipo di layout una trasposizione di scala, accordo o brano musicale non causa nessun cambiamento di forma nel percorso da effettuare.
+    The key grid was designed with an isomorphic layout: each note is surrounded by eight adjacent elements, whose position relative to the reference note defines the increment or decrement in semitones, as shown in Fig. 2. Thanks to this layout, transposing a scale, chord, or musical piece does not alter the shape of the path to be played.
 </p>
 <p>
-  Per suonare NetytarWeb attraverso il movimento degli occhi è necessario dotarsi di un eye tracker. Durante lo sviluppo del progetto è stato utilizzato Tobii Eye Tracker 5. Con esso viene fornito un software per la calibrazione del dispositivo. Grazie a un’applicazione middleware esso si sostituisce al cursore del mouse, opzione attivabile dalla pressione del tasto “L”.
+    To play NetytarWeb using eye movement, an eye tracker is required. During development, the Tobii Eye Tracker 5 was used, which comes with software for device calibration. Through a middleware application, it replaces the mouse cursor, an option activated by pressing the “L” key.
 </p>
 
-## Utilizzare NetytarWeb
-<h3>Requisiti hardware</h3>
-<p>Per utilizzare NetytarWeb è neccessario essere in possesso di:</p>
+## How to use NetytarWeb
+<h3>Hardware Requirements</h3>
+<p>To use NetytarWeb, you need:</p>
 <ul>
-    <li>un computer connesso alla rete internet e munito di browser compatibile.</li>
-    <li>un sensore a fiato realizzato con Arduino, istruzioni per la sua costruzione sono disponibili su: https://github.com/Neeqstock/NeeqSensors</li>
-    <li>un dispositivo Tobii Eye Tracker (ad oggi compatibile solo con il sistema operativo Windows)</li>
+    <li>a computer connected to the internet and equipped with a compatible browser</li>
+    <li>a breath sensor built with Arduino; instructions for its construction are available at: https://github.com/Neeqstock/NeeqSensors</li>
+    <li>a Tobii Eye Tracker device (currently compatible only with the Windows operating system)</li>
 </ul>
 
-<h3>Requisiti software</h3>
-<p>Per utilizzare NetytarWeb è necessario installare i seguenti software sul proprio computer:</p>
+<h3>Software Requirements</h3>
+<p>To use NetytarWeb, the following software must be installed on your computer:</p>
 <ul>
-    <li>E` particolarmente consigliato Google Chrome.</li>
+    <li>Google Chrome is strongly recommended</li>
     <li>Tobii Drivers (https://gaming.tobii.com/getstarted/)</li>
-    <li>applicazione middleware per l’utilizzo del sensore a fiato, disponibile su:
-     https://github.com/Neeqstock/NetytarWebController</li>
-    <li>sintetizzatore software o una DAW che mette a disposizione una libreria di suoni:
+    <li>A middleware application for using the breath sensor, available at:
+https://github.com/Neeqstock/NetytarWebController. </li>
+    <li>
+A software synthesizer or a DAW that provides a sound library:
         <ul>
-        <li>sistema operativo Apple: è possibile utilizzare Garageband (https: //www.apple.com/it/mac/garageband/) e impostare le porte MIDI tramite driver IAC (Impostazioni/Configurazioni MIDI audio/finestra/- Mostra studio MIDI)
-            <li>sistema operativo Windows: è possibilie utilizzare LoopMidi (https:// www.tobias-erichsen.de/software/loopmidi.html) per creare una connessione MIDI virtuale sulla macchina. Tramite VSTHost (https: //www.hermannseib.com/english/vsthost.htm) è possibile caricare plugin VST, molti dei quali sono reperibili gratuitamente sul sito Plu- gins4Free (https://plugins4free.com/).</li></ul>
-</li>
-
+            <li>Apple operating system: Garageband can be used (https://www.apple.com/it/mac/garageband/) and MIDI ports can be configured through the IAC driver (Settings/MIDI Configuration window/Show MIDI Studio).</li>
+            <li>Windows operating system: It is possible to use LoopMidi (https://www.tobias-erichsen.de/software/loopmidi.html) to create a virtual MIDI connection on the machine. VSTHost (https://www.hermannseib.com/english/vsthost.htm) can be used to load VST plugins, many of which are available for free on the Plugins4Free website (https://plugins4free.com/).</li>
+        </ul>
+    </li>
 </ul>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.innerHTML === "Hello") {
-    x.innerHTML = "Swapped text!";
-  } else {
-    x.innerHTML = "Hello";
-  }
-}
-</script>
-<p>Click the button to swap the text of the DIV element:</p>
 
-<p><button onclick="myFunction()">Click Me</button></p>
 
-<div id="myDIV">Hello</div>
