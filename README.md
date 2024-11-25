@@ -37,16 +37,16 @@
 <h3>Hardware Requirements</h3>
 <p>To use NetytarWeb, you need:</p>
 <ul>
-    <li>a computer connected to the internet and equipped with a compatible browser</li>
-    <li>a breath sensor built with Arduino; instructions for its construction are available at: https://github.com/Neeqstock/NeeqSensors</li>
-    <li>a Tobii Eye Tracker device (currently compatible only with the Windows operating system)</li>
+    <li>a computer connected to the internet and equipped with a compatible browser.</li>
+    <li>a breath sensor built with Arduino; instructions for its construction are available at: https://github.com/Neeqstock/NeeqSensors .</li>
+    <li>a Tobii Eye Tracker device (currently compatible only with the Windows operating system).</li>
 </ul>
 
 <h3>Software Requirements</h3>
 <p>To use NetytarWeb, the following software must be installed on your computer:</p>
 <ul>
-    <li>Google Chrome is strongly recommended</li>
-    <li>Tobii Drivers (https://gaming.tobii.com/getstarted/)</li>
+    <li>Google Chrome is strongly recommended.</li>
+    <li>Tobii Drivers (https://gaming.tobii.com/getstarted/).</li>
     <li>A middleware application for using the breath sensor, available at:
 https://github.com/Neeqstock/NetytarWebController. </li>
     <li>
